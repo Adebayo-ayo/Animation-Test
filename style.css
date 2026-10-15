@@ -13,6 +13,38 @@ body {
   /* overflow: hidden; */
 }
 
+.one {
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+  animation: onee 5s linear infinite  ;
+}
+
+@keyframes onee {
+  0% {
+    transform: translate(1300px,500px);
+  }
+  100% {
+    transform: translatex(-1300px);
+  }
+}
+
+.two {
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+  animation: twoo 10s linear infinite;
+}
+
+@keyframes twoo {
+  0% {
+    transform: translate(-1300px,-300px);
+  }
+  100% {
+    transform: translatex(1300px);
+  }
+}
+
 .container {
   animation: upanddown 5s linear infinite;
 }
@@ -35,13 +67,13 @@ body {
   left: 750px;
   width: 200px;
   height: 200px;
-   border: 2px solid transparent;
+  border: 2px solid transparent;
 
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
-.mainbox img{
+.mainbox img {
   position: absolute;
   z-index: -1;
   width: 200px;
@@ -56,8 +88,7 @@ body {
   left: 0px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox:has(.left:active) {
   transition: 0.6s ease;
@@ -70,8 +101,7 @@ body {
   left: 40px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox:has(.leftinner:active) {
@@ -99,7 +129,6 @@ body {
   width: 40px;
   height: 190px;
   border: 2px solid transparent;
-
 }
 .mainbox:has(.rightinner:active) {
   transition: 0.6s ease;
@@ -113,7 +142,6 @@ body {
   width: 40px;
   height: 190px;
   border: 2px solid transparent;
-
 }
 
 .mainbox:has(.right:active) {
@@ -148,7 +176,7 @@ body {
   /* transform: translateY(3000px); */
 }
 
-.mainbox1 img{
+.mainbox1 img {
   position: absolute;
   z-index: -1;
   /* border: 2px dashed peru; */
@@ -205,7 +233,6 @@ body {
   width: 40px;
   height: 190px;
   border: 2px solid transparent;
-
 }
 .mainbox1:has(.rightinner1:active) {
   transition: 0.6s ease;
@@ -218,8 +245,7 @@ body {
   left: 160px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox1:has(.right1:active) {
@@ -249,13 +275,13 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-    border: 2px solid transparent;
+  border: 2px solid transparent;
 
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
-.mainbox2 img{
-    position: absolute;
+.mainbox2 img {
+  position: absolute;
   z-index: -1;
   object-fit: cover;
   width: 200px;
@@ -269,8 +295,7 @@ body {
   left: 0px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox2:has(.left2:active) {
   transition: 0.6s ease;
@@ -283,8 +308,7 @@ body {
   left: 40px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox2:has(.leftinner2:active) {
@@ -311,8 +335,7 @@ body {
   left: 120px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox2:has(.rightinner2:active) {
   transition: 0.6s ease;
@@ -326,7 +349,6 @@ body {
   width: 40px;
   height: 190px;
   border: 2px solid transparent;
-
 }
 
 .mainbox2:has(.right2:active) {
@@ -356,14 +378,14 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-    border: 2px solid transparent;
+  border: 2px solid transparent;
 
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
-.mainbox3 img{
-    position: absolute;
+.mainbox3 img {
+  position: absolute;
   z-index: -1;
   width: 200px;
   height: 200px;
@@ -377,8 +399,7 @@ body {
   left: 0px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox3:has(.left3:active) {
   transition: 0.6s ease;
@@ -391,8 +412,7 @@ body {
   left: 40px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox3:has(.leftinner3:active) {
@@ -419,8 +439,7 @@ body {
   left: 120px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox3:has(.rightinner3:active) {
   transition: 0.6s ease;
@@ -433,8 +452,7 @@ body {
   left: 160px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox3:has(.right3:active) {
@@ -464,14 +482,14 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-    border: 2px solid transparent;
+  border: 2px solid transparent;
 
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
-.mainbox4 img{
-    position: absolute;
+.mainbox4 img {
+  position: absolute;
   z-index: -1;
   width: 200px;
   height: 200px;
@@ -485,8 +503,7 @@ body {
   left: 0px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox4:has(.left4:active) {
   transition: 0.6s ease;
@@ -499,8 +516,7 @@ body {
   left: 40px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox4:has(.leftinner4:active) {
@@ -527,8 +543,7 @@ body {
   left: 120px;
   width: 40px;
   height: 190px;
-    border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 .mainbox4:has(.rightinner4:active) {
   transition: 0.6s ease;
@@ -541,8 +556,7 @@ body {
   left: 160px;
   width: 40px;
   height: 190px;
-   border: 2px solid transparent;
-
+  border: 2px solid transparent;
 }
 
 .mainbox4:has(.right4:active) {
