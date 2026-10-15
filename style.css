@@ -8,6 +8,10 @@ img {
   width: 100%;
 }
 body {
+  background-image: url("images/backgrounddisplay.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   width: 100vw;      
   height: 100vh;     
@@ -15,7 +19,7 @@ body {
   background-color: #050505; 
 
 }
-
+/* 
 .one {
   position: absolute; 
   top: 0;
@@ -52,18 +56,57 @@ body {
   100% {
     transform: translatex(1300px);
   }
+} */
+
+
+.one {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+  animation: onee 18s linear infinite; /* Slowed down to act as a moving background target */
+}
+
+@keyframes onee {
+  0% {
+    transform: translate(1800px, 100px);
+  }
+  100% {
+    transform: translate(-1500px, 100px);
+  }
+}
+
+.two {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+  animation: twoo 22s linear infinite; /* Moves slightly slower than aircraft 1 */
+}
+
+@keyframes twoo {
+  0% {
+    transform: translate(-1500px, 350px); 
+  }
+  100% {
+    transform: translate(1800px, 350px);
+  }
 }
 
 .container {
-  animation: upanddown 5s linear infinite;
+  animation: upanddown 11s linear infinite;
 }
 
 @keyframes upanddown {
   0% {
-    transform: translate(500px, -500px);
+    transform: translate(300px, -400px);
   }
   100% {
-    transform: translateY(3000px);
+    transform: translate(-300px,1200px);
   }
 }
 
@@ -159,15 +202,15 @@ body {
 }
 
 .container1 {
-  animation: upanddownone 12s linear infinite;
+  animation: upanddownone 14s linear infinite;
 }
 
 @keyframes upanddownone {
   0% {
-    transform: translate(-600px, -800px);
+    transform: translate(-400px, -400px);
   }
   100% {
-    transform: translateY(3000px);
+    transform: translate(200px,1200px);
   }
 }
 
@@ -263,15 +306,15 @@ body {
 }
 
 .container2 {
-  animation: upanddowntwo 15s linear infinite;
+  animation: upanddowntwo 8s linear infinite;
 }
 
 @keyframes upanddowntwo {
   0% {
-    transform: translateY(-800px);
+    transform: translate(0,-500px);
   }
   100% {
-    transform: translateY(3000px);
+    transform: translate(0px,1200px);
   }
 }
 
@@ -366,15 +409,15 @@ body {
 }
 
 .container3 {
-  animation: upanddownthree 14s linear infinite;
+  animation: upanddownthree 16s linear infinite;
 }
 
 @keyframes upanddownthree {
   0% {
-    transform: translate(400px, 1200px);
+    transform: translate(300px, 1200px);
   }
   100% {
-    transform: translateY(-1000px);
+    transform: translate(200px,-400px);
   }
 }
 
@@ -470,15 +513,15 @@ body {
 }
 
 .container4 {
-  animation: upanddownfour 9s linear infinite;
+  animation: upanddownfour 12s linear infinite;
 }
 
 @keyframes upanddownfour {
   0% {
-    transform: translate(-600px, 1200px);
+    transform: translate(-300px, 1200px);
   }
   100% {
-    transform: translateY(-1000px);
+    transform: translate(300px,-400px);
   }
 }
 
