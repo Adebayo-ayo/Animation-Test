@@ -35,18 +35,29 @@ body {
   left: 750px;
   width: 200px;
   height: 200px;
-  border: 2px solid red;
+   border: 2px solid transparent;
+
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
+.mainbox img{
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .left {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 .mainbox:has(.left:active) {
   transition: 0.6s ease;
@@ -55,11 +66,12 @@ body {
 
 .leftinner {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 40px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 
 .mainbox:has(.leftinner:active) {
@@ -69,15 +81,14 @@ body {
 
 .middle {
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 80px;
   width: 40px;
-  height: 120px;
+  height: 190px;
   border: 2px solid transparent;
 }
 .mainbox:has(.middle:active) {
   transition: 0.6s ease;
-
   transform: translate(0px, -4000px);
 }
 
@@ -87,7 +98,8 @@ body {
   left: 120px;
   width: 40px;
   height: 190px;
-  border: 2px solid green;
+  border: 2px solid transparent;
+
 }
 .mainbox:has(.rightinner:active) {
   transition: 0.6s ease;
@@ -96,11 +108,12 @@ body {
 
 .right {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 160px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+  border: 2px solid transparent;
+
 }
 
 .mainbox:has(.right:active) {
@@ -130,16 +143,15 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-  border: 2px solid red;
+  border: 2px solid transparent;
   transition: 6s ease;
-  color: transparent;
   /* transform: translateY(3000px); */
 }
 
-.mainbox1 img {
-  position: relative;
+.mainbox1 img{
+  position: absolute;
   z-index: -1;
-  border: 2px dashed peru;
+  /* border: 2px dashed peru; */
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -148,11 +160,11 @@ body {
 
 .left1 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+  border: 2px solid transparent;
 }
 .mainbox1:has(.left1:active) {
   transition: 0.6s ease;
@@ -161,11 +173,11 @@ body {
 
 .leftinner1 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 40px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+  border: 2px solid transparent;
 }
 
 .mainbox1:has(.leftinner1:active) {
@@ -175,25 +187,25 @@ body {
 
 .middle1 {
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 80px;
   width: 40px;
-  height: 120px;
+  height: 190px;
   border: 2px solid transparent;
 }
 .mainbox1:has(.middle1:active) {
   transition: 0.6s ease;
-
   transform: translate(0px, -4000px);
 }
 
 .rightinner1 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 120px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+  border: 2px solid transparent;
+
 }
 .mainbox1:has(.rightinner1:active) {
   transition: 0.6s ease;
@@ -202,11 +214,12 @@ body {
 
 .right1 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 160px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 
 .mainbox1:has(.right1:active) {
@@ -236,18 +249,28 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-  border: 2px solid red;
+    border: 2px solid transparent;
+
   transition: 6s ease;
   /* transform: translateY(3000px); */
+}
+.mainbox2 img{
+    position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .left2 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 .mainbox2:has(.left2:active) {
   transition: 0.6s ease;
@@ -256,11 +279,12 @@ body {
 
 .leftinner2 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 40px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 
 .mainbox2:has(.leftinner2:active) {
@@ -270,25 +294,25 @@ body {
 
 .middle2 {
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 80px;
   width: 40px;
-  height: 120px;
+  height: 190px;
   border: 2px solid transparent;
 }
 .mainbox2:has(.middle2:active) {
   transition: 0.6s ease;
-
   transform: translate(0px, -4000px);
 }
 
 .rightinner2 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 120px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 .mainbox2:has(.rightinner2:active) {
   transition: 0.6s ease;
@@ -297,11 +321,12 @@ body {
 
 .right2 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 160px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+  border: 2px solid transparent;
+
 }
 
 .mainbox2:has(.right2:active) {
@@ -331,18 +356,29 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-  border: 2px solid green;
+    border: 2px solid transparent;
+
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
+.mainbox3 img{
+    position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .left3 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 .mainbox3:has(.left3:active) {
   transition: 0.6s ease;
@@ -351,11 +387,12 @@ body {
 
 .leftinner3 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 40px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 
 .mainbox3:has(.leftinner3:active) {
@@ -365,10 +402,10 @@ body {
 
 .middle3 {
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 80px;
   width: 40px;
-  height: 120px;
+  height: 190px;
   border: 2px solid transparent;
 }
 .mainbox3:has(.middle3:active) {
@@ -378,11 +415,12 @@ body {
 
 .rightinner3 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 120px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 .mainbox3:has(.rightinner3:active) {
   transition: 0.6s ease;
@@ -391,11 +429,12 @@ body {
 
 .right3 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 160px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 
 .mainbox3:has(.right3:active) {
@@ -425,18 +464,29 @@ body {
   left: 550px;
   width: 200px;
   height: 200px;
-  border: 2px solid yellow;
+    border: 2px solid transparent;
+
   transition: 6s ease;
   /* transform: translateY(3000px); */
 }
 
+.mainbox4 img{
+    position: absolute;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .left4 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 .mainbox4:has(.left4:active) {
   transition: 0.6s ease;
@@ -445,11 +495,12 @@ body {
 
 .leftinner4 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 40px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 
 .mainbox4:has(.leftinner4:active) {
@@ -459,10 +510,10 @@ body {
 
 .middle4 {
   position: absolute;
-  top: 80px;
+  top: 0px;
   left: 80px;
   width: 40px;
-  height: 120px;
+  height: 190px;
   border: 2px solid transparent;
 }
 .mainbox4:has(.middle4:active) {
@@ -472,11 +523,12 @@ body {
 
 .rightinner4 {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 120px;
   width: 40px;
-  height: 110px;
-  border: 2px solid green;
+  height: 190px;
+    border: 2px solid transparent;
+
 }
 .mainbox4:has(.rightinner4:active) {
   transition: 0.6s ease;
@@ -485,11 +537,12 @@ body {
 
 .right4 {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 160px;
   width: 40px;
-  height: 100px;
-  border: 2px solid blue;
+  height: 190px;
+   border: 2px solid transparent;
+
 }
 
 .mainbox4:has(.right4:active) {
