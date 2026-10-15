@@ -9,11 +9,17 @@ img {
 }
 body {
   position: relative;
-  /* overflow-y: hidden; */
-  /* overflow: hidden; */
+  width: 100vw;      
+  height: 100vh;     
+  overflow: hidden;  
+  background-color: #050505; 
+
 }
 
 .one {
+  position: absolute; 
+  top: 0;
+  left: 0;
   object-fit: contain;
   width: 600px;
   height: 600px;
@@ -30,6 +36,9 @@ body {
 }
 
 .two {
+    position: absolute; 
+  top: 0;
+  left: 0;
   object-fit: contain;
   width: 600px;
   height: 600px;
